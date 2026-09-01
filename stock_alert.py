@@ -2,7 +2,7 @@ import os
 import json
 import requests
 
-token = os.getenv("KAKAO_ACCESS_TOKEN")
+token = os.getenv("KAKAO_ACCESS_TOKEN", "").strip()
 
 if not token:
     raise Exception("KAKAO_ACCESS_TOKEN이 없습니다.")
