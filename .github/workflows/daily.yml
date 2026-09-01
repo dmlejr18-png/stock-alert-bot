@@ -3,7 +3,7 @@ name: Daily Stock Alert
 
 on:
   schedule:
-    - cron: '30 23 * * 1-5'
+    - cron: '53 10 * * 1-5'
   workflow_dispatch:
 
 jobs:
