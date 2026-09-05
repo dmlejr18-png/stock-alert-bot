@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 
 REST_API_KEY = "52a818f0d25965b7e96a959adcbe57a0"
-CLIENT_SECRET = "7z3zDOpoiSGoWm2RXRdL4JGwF9Vlj8OV"
+CLIENT_SECRET = "xUBMdgzDOoL85JcnY0fB8RlGPbavAsGf"
 REDIRECT_URI = "https://ubiquitous-space-fishstick-gx7rvg9g64x43vvgq-4000.app.github.dev/redirect"
 
 
