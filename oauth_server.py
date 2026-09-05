@@ -30,7 +30,24 @@ def redirect():
             "client_secret": CLIENT_SECRET
         }
     )
+if response.ok:
+    token = response.json()
+    access_token = token["access_token"]
 
+    user_response = requests.get(
+        "https://kapi.kakao.com/v2/user/me",
+        headers={
+            "Authorization": f"Bearer {access_token}"
+        }
+    )
+
+    if user_response.ok:
+        user = user_response.json()
+        return f"<h1>카카오 로그인 성공!</h1><p>사용자 ID: {user.get('id')}</p>"
+
+    return f"<h1>사용자 정보 조회 실패</h1><p>{user_response.text}</p>"
+
+return f"<h1>토큰 발급 실패</h1><p>{response.text}</p>"
     if response.ok:
         token = response.json()
 
