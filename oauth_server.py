@@ -6,8 +6,8 @@ app = Flask(__name__)
 # 카카오 디벨로퍼스에서 발급받은 정보 입력
 REST_API_KEY = "52a818f0d25965b7e96a959adcbe57a0"
 CLIENT_SECRET = "xUBMdgzDOoL85JcnY0fB8RlGPbavAsGf"  # 보안 설정 안 썼으면 빈값 "" 가능
-REDIRECT_URI = "REDIRECT_URI = "https://my-stock-bot-2026.loca.lt/redirect"
-"  # 설정한 Redirect URI 주소
+REDIRECT_URI = "https://kauth.kakao.com/oauth/authorize?client_id=5e845f4d056ffdd00c3a4f4c3fa42748&redirect_uri=https://my-stock-bot-2026.loca.lt/redirect&response_type=code"
+
 
 @app.route("/redirect")
 def redirect():
