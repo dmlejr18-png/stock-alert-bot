@@ -7,7 +7,7 @@ app = Flask(__name__)
 REST_API_KEY = "52a818f0d25965b7e96a959adcbe57a0"
 CLIENT_SECRET = "xUBMdgzDOoL85JcnY0fB8RlGPbavAsGf"  # 보안 설정 안 썼으면 빈값 "" 가능
 REDIRECT_URI =  "https://jubilant-potato-j45g997jx5vfj5xj-4000.app.github.dev/redirect"
-"
+
 
 
 @app.route("/redirect")
