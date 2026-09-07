@@ -1,9 +1,9 @@
+cat << 'EOF' > oauth_server.py
 from flask import Flask, request
 import requests
 
 app = Flask(name)
 
-# 본인 앱의 실제 REST API 키와 정확한 Redirect URI만 작성
 REST_API_KEY = "52a818f0d25965b7e96a959adcbe57a0"
 REDIRECT_URI = "https://jubilant-potato-j45g997jx5vfj5xj-4000.app.github.dev/redirect"
 
@@ -31,6 +31,10 @@ return f"<h1>토큰 발급 실패</h1><p>{result}</p>"
 
 if name == "main":
 app.run(host="0.0.0.0", port=4000)
+EOF
+
+
+
 
 
 
