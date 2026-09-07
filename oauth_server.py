@@ -13,7 +13,6 @@ code = request.args.get("code")
 if not code:
 return "<h1>인가 코드가 없습니다.</h1>", 400
 
-# 2단계 토큰 요청 (client_secret 파라미터 완전 제거)
 url = "https://kauth.kakao.com/oauth/token"
 data = {
 "grant_type": "authorization_code",
@@ -32,26 +31,3 @@ return f"<h1>토큰 발급 실패</h1><p>{result}</p>"
 
 if name == "main":
 app.run(host="0.0.0.0", port=4000)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
