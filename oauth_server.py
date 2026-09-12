@@ -5,7 +5,7 @@ import requests
 app = Flask(name)
 
 REST_API_KEY = "52a818f0d25965b7e96a959adcbe57a0"
-REDIRECT_URI = "https://ubiquitous-space-fishstick-gx7rvg9g64x43vgg-4000.app.github.dev/redirect"
+REDIRECT_URI = "https://verbose-spoon-96j5gpvp5pxwc66x-4000.app.github.dev/redirect"
 
 @app.route("/redirect")
 def redirect():
